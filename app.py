@@ -2,9 +2,9 @@ from flask import Flask,jsonify
 from flask import Flask, render_template, Response
 import cv2
 
-app = Flask(__name__)
-
 camera = cv2.VideoCapture('rtsp://freja.hiof.no:1935/rtplive/_definst_/hessdalen03.stream')
+
+app = Flask(__name__)
 
 def gen_frames():  
     while True:
@@ -34,6 +34,7 @@ data = [
             "language": "Python"
         }
     ]
+
 
 @app.route('/')
 def hello():
