@@ -53,7 +53,7 @@ def name():
 def Home(name):
 	return render_template('home.html', name_html=name)
 	   
-@app.route('/')
+@app.route('/video')
 def index():
     return render_template('index.html')
 	   
