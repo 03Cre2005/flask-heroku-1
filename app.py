@@ -51,7 +51,7 @@ def name():
 
 @app.route('/hello/<stri@app.route('/')
 def Home(name):
-	return render_template('home.html', name_html=name)
+    return render_template('home.html', name_html=name)
 	   
 @app.route('/video')
 def index():
