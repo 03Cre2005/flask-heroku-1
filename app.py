@@ -49,7 +49,7 @@ def get_api():
 def name():
     return "<font color=red>มลทิพย์ ตั้งภานิช</font> <br>เลขที่ 17 ชั้นม.4/10"
 
-@app.route('/hello/<stri@app.route('/')
+@app.route('/hello/<string:name>')
 def Home(name):
     return render_template('home.html', name_html=name)
 	  
